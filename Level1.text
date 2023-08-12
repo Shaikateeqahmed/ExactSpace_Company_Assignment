@@ -1,0 +1,18 @@
+Below are the Commands of Bash.
+
+For finding all the .log files in computer 
+        find / -type f -name "*.log"
+
+for getting the size of all the .log files in computer
+         find / -type f -name "*.log" -exec ls -lh {} \;
+
+for getting the largest .log file in computer.
+        find / -type f -name "*.log" -exec du -h {} + | sort -rh | head -n 1
+
+for opening the largest .log file.
+        cat your_log_file.log
+        // i had put in place of your_log_file is /tmp/vscode-inno-updater-1691853108.log;
+for truncate it to 100 lines.
+       tail -n 100 your_log_file.log
+        // i had put in place of your_log_file is /tmp/vscode-inno-updater-1691853108.log ;
+       

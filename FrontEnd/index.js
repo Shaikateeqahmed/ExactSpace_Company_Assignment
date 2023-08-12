@@ -21,6 +21,8 @@ async function submit(e){
 
           let keys = Object.keys(resp);
           let key = keys[0];
+          let value = resp[`${key}`];
+          console.log(value);
           document.getElementById("key").innerText=key;
           document.getElementById("value").innerText=resp[`${key}`];
         }else{
