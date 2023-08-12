@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        #main{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 300px;
+            gap: 5%;
+        }
+        #container{
+            /* width: 40%; */
+            border: 1px solid teal;
+            padding: 30px;
+        }
+        #container>textarea{
+            width: 90%;
+        }
+        #container>input{
+             width: 40%;
+             padding: 5px 0px;
+        }
+        #output{
+            /* width: 40%; */
+            border: 1px solid teal;
+            padding: 50px;
+        }
+        #value{
+            border: 1px solid teal;
+            padding: 10px 10px;
+        }
+        #output>div{
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>ExactSpace</h1>
+    <h3>Check Our input is valid json or not!</h3>
+    <div id="main">
+        <form id="container">
+            <p>Enter Your JSON Format in the below box!</p>
+            <textarea id="format" rows="5" cols="50">
+        
+              </textarea><br><br>
+              <input id="submit" type="submit" value="submit">
+        </form>
+        <div id="output">
+            <h3>OUTPUT</h3>
+            <div>
+                <p id="key"></p>
+                <textarea  id="value" cols="50" rows="5"></textarea>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+
+</html>
+
+<script src="./index.js"></script>
