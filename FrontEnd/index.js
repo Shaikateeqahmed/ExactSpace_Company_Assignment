@@ -1,5 +1,4 @@
 document.getElementById("submit").addEventListener("click",submit);
-let url = "http://localhost:3000"
 
 async function submit(e){
         e.preventDefault();
@@ -10,7 +9,7 @@ async function submit(e){
         console.log(isValidJson(format));
         // let trimit = format.trim();
         if(isValidJson(format)){
-          let resp = await fetch("http://localhost:3000",{
+          let resp = await fetch("https://exactspace-assignment.onrender.com/",{
             method : "POST",
             body : format,
             headers : {

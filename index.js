@@ -24,3 +24,6 @@ app.post("/",(req,res)=>{
 app.listen(3000,()=>{
     console.log(`Server is Running on a port 3000`);
 })
+
+//deployment link:- https://exactspace-assignment.onrender.com/
+//https://64d7b1697408bc17db89ccb6--cerulean-stroopwafel-0c90cd.netlify.app/
